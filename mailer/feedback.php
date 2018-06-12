@@ -3,9 +3,9 @@ require 'PHPMailerAutoload.php';
 require 'form_setting.php';
 
 if(isset($_POST)){
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$message = $_POST['message'];
+	$name = $_GET['name'];
+	$email = $_GET['email'];
+	$message = $_GET['message'];
 	
 	$messages  = "<h3>New message from the site " .$fromName. "</h3> \r\n";
 	$messages .= "<ul>";

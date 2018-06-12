@@ -271,7 +271,7 @@ $(function () {
 		submitHandler: function() {
 			$.ajax({
 				url: 'mailer/feedback.php',
-				type: 'post',
+				type: 'get',
 				dataType: 'json',
 				data: 'name='+ $("#cform").find('input[name="name"]').val() + '&email='+ $("#cform").find('input[name="email"]').val() + '&message=' + $("#cform").find('textarea[name="message"]').val(),
 				beforeSend: function() {
